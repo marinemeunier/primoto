@@ -21,6 +21,4 @@ Professeur encadrant :
 * NodeJS
 * Maria DB
 
-Omair
-
 
