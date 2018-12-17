@@ -42,11 +42,6 @@ Avec la monté en puissance du célèbre mouvement les « Gilets Jaunes », le
 * **100€** pour tous les ménages sans plafonnement de ressources 
 * **1000€** pour tous les ménages non-imposables 
 
-
-* **2000€** pour les ménages non-imposables (voiture thermique neuve ou d’occasion ou électrique d’occasion),
-* **2500€** pour l’achat ou la location d’une voiture électrique neuve 
-
-
 ### Les véhicules à convertir sont :
 
 * Diesels avant 2001 pour foyers imposables.
