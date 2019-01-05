@@ -1,0 +1,94 @@
+{
+	"markers": [
+		{
+			"id": 1,
+			"nom": "AUTOMOBILE SUFFREN",
+			"marque": "Volkswagen",
+			"url": "http://espacesuffren.com/",
+			"tel": "01 53 58 10 00",
+			"adresse": "40 Avenue de Suffren, 75015 Paris",
+			"lat": 48.854303,
+			"lng": 2.295719
+		},
+		{
+			"id": 2,
+			"nom": "RENAULT PARIS PICPUS",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.paris-picpus.html",
+			"tel": "01 44 74 08 71",
+			"adresse": "42 Rue de Picpus, 75012 Paris",
+			"lat": 48.844719,
+			"lng": 2.395727
+		},
+		{
+			"id": 3,
+			"nom": "RENAULT PARIS CHARONNE",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.paris-charonne.html",
+			"tel": "01 53 27 61 70",
+			"adresse": "55 Boulevard de Charonne, 75011 Paris",
+			"lat": 48.852805,
+			"lng": 2.396948
+		},
+		{
+			"id": 4,
+			"nom": "RENAULT PARIS CHAMPIONNET",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.paris-championnet.html",
+			"tel": "01 42 28 36 36",
+			"adresse": "205 Rue Championnet, 75018 Paris",
+			"lat": 48.893768,
+			"lng": 2.331452
+		},
+		{
+			"id": 5,
+			"nom": "RENAULT PARIS ETOILE",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.paris-rive-droite.html",
+			"tel": "01 53 53 60 60",
+			"adresse": "23 Boulevard de Courcelles, 75008 Paris",
+			"lat": 48.880842,
+			"lng": 2.314431
+		},
+		{
+			"id": 6,
+			"nom": "L'ATELIER RENAULT PARIS",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.paris-atelier.html",
+			"tel": "01 76 84 19 19",
+			"adresse": "70 Rue Pierre Charron, 75008 Paris",
+			"lat": 48.870126,
+			"lng": 2.30491
+		},
+		{
+			"id": 7,
+			"nom": "RENAULT PARIS GRENELLE",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.paris-rive-gauche.html",
+			"tel": "01 44 37 20 20",
+			"adresse": "29 Quai de Grenelle, 75015 Paris",
+			"lat": 48.852589,
+			"lng": 2.28686
+		},
+		{
+			"id": 8,
+			"nom": "RENAULT PARIS LEFEBVRE",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.renault-lefebvre.html",
+			"tel": "01 44 37 20 20",
+			"adresse": "96 Boulevard Lefebvre, 75015 Paris",
+			"lat": 48.829807,
+			"lng": 2.296266
+		},
+		{
+			"id": 9,
+			"nom": "RENAULT PARIS SAINT JACQUES",
+			"marque": "Renault",
+			"url": "https://www.renault.fr/concessionnaire.paris-st-jacques.html",
+			"tel": "01 44 37 20 20",
+			"adresse": "20 Rue du Faubourg Saint-Jacques, 75014 Paris",
+			"lat": 48.837994,
+			"lng": 2.338973
+		}
+	]
+}

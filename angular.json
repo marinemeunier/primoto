@@ -24,10 +24,12 @@
 			  "src/web.config"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/leaflet/leaflet.css"
             ],
             "scripts": [
-			  "./node_modules/jquery/dist/jquery.min.js"
+			  "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/leaflet/leaflet.js"
 			]
           },
           "configurations": {

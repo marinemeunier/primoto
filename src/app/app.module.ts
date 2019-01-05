@@ -14,6 +14,7 @@ import { FormsModule }   from '@angular/forms';
 import { PapaParseModule } from 'ngx-papaparse';
 import { ResultatViewComponent } from './resultat-view/resultat-view.component';
 import { Routes, RouterModule } from '@angular/router';
+import { CarteComponent } from './carte/carte.component';
 
 const appRoutes: Routes = [
   { path: 'resultat/:id', component: ResultatViewComponent }
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     AboutComponent,
     ContactComponent,
     RechercheParPlaqueComponent,
-    ResultatViewComponent
+    ResultatViewComponent,
+    CarteComponent
   ],
   imports: [
     BrowserModule,
