@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as jsonMarkers from "../markers.json";
+import * as ci from "../constIconeCarte";
 
 declare let L;
 
@@ -32,7 +33,7 @@ L.marker([48.856614, 2.352222]).addTo(map)
 						"<br>" + m[i].tel +
 						"<br>" + m[i].adresse;
 						
-		L.marker( [m[i].lat, m[i].lng] )
+		L.marker( [m[i].lat, m[i].lng], {icon: ci.getMarqueIcone(m[i].marque)} )
 			.bindPopup(htmlPopup)
 			.addTo( map );
 	}

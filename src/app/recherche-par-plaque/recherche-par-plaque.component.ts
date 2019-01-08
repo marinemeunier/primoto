@@ -4,8 +4,9 @@ import "../../assets/js/papaparse.min.js";
 import { csv } from "../bdd_voitures";
 import * as fonc from "../fonction";
 import * as constantes from "../constantes";
+import {default as papa} from "papaparse";
 
-const papa = require('papaparse');
+//const papa = require('papaparse');
 const csvData = papa.parse(csv).data;
 
 @Component({
