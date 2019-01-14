@@ -43,8 +43,9 @@ export class RechercheParPlaqueComponent implements OnInit {
 	
 	var dataBesoinClient = csvData[index];
 	dataBesoinClient[constantes.INDEX_IMPOSABLE] = false;
-	dataBesoinClient[constantes.INDEX_TYPE_VEHICULE_VOULU] = "diesel";
+	dataBesoinClient[constantes.INDEX_TYPE_VEHICULE_VOULU] = "essence";
 	dataBesoinClient[constantes.INDEX_ETAT_VEHICULE_VOULU] = "neuf";
+	dataBesoinClient[constantes.INDEX_GRAND_ROULEUR] = false;
 		
 	console.log(fonc.getPrime(dataBesoinClient));
 	

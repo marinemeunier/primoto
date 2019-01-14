@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as jsonMarkers from "../markers.json";
 import * as ci from "../constIconeCarte";
+import * as esri from 'esri-leaflet';
 
 declare let L;
 
@@ -14,14 +15,11 @@ export class CarteComponent implements OnInit {
   constructor() { }
   
   ngOnInit() {	  
-     var map = L.map('map').setView([48.856614, 2.352222], 12);
+    var map = L.map('map').setView([48.856614, 2.352222], 12);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
-L.marker([48.856614, 2.352222]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.');
 	
 	var m = jsonMarkers.markers;
 	
@@ -37,6 +35,9 @@ L.marker([48.856614, 2.352222]).addTo(map)
 			.bindPopup(htmlPopup)
 			.addTo( map );
 	}
+	
+	const esriLayer = esri.basemapLayer('Topographic');
+    map.addLayer(esriLayer);
   }
 
 }

@@ -8,6 +8,7 @@ export const INDEX_DATE_DERNIERE_IMMATRICULATION = 6;
 export const INDEX_IMPOSABLE = 7;
 export const INDEX_TYPE_VEHICULE_VOULU = 8;
 export const INDEX_ETAT_VEHICULE_VOULU = 9;
+export const INDEX_GRAND_ROULEUR = 10;
 
 export const DATE_LIMITE_DIESEL_NON_IMPOSABLE = new Date('01/01/2006');
 export const DATE_LIMITE_DIESEL_IMPOSABLE = new Date('01/01/2001');
