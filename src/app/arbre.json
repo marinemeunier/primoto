@@ -1,0 +1,439 @@
+{
+	"-999": {
+		"description": "Non éligible",
+		"nbFils": 0,
+		"prime": 0,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"1": {
+		"description": "diesel imposable : avant 2001 ?",
+		"nbFils": 2,
+		"trueFils": 3,
+		"falseFils": -999,
+		"htmlID": "dieselImposableForm"
+	},
+	"2": {
+		"description": "diesel non imposable : avant 2006 ?",
+		"nbFils": 2,
+		"trueFils": 18,
+		"falseFils": -999,
+		"htmlID": "dieselNImposableForm"
+	},
+	"3": {
+		"description": "diesel type vehicule a acheter",
+		"nbFils": 2,
+		"voitureFils": 4,
+		"motoFils": 11,
+		"htmlID": "typeVehiculeAcheterForm"
+	},
+	"4": {
+		"description": "diesel voiture etat vehicule a acheter",
+		"nbFils": 2,
+		"neufFils": 5,
+		"occasionFils": 10,
+		"htmlID": "etatVehiculeForm"
+	},
+	"5": {
+		"description": "diesel voiture neuf classement critair",
+		"nbFils": 4,
+		"electriqueFils": 8,
+		"ca1Fils": 6,
+		"ca2Fils": -999,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"6": {
+		"description": "diesel voiture neuf emissions CO2 ca1",
+		"nbFils": 3,
+		"-50Fils": 7,
+		"51-122Fils": 9,
+		"+122Fils": -999,
+		"htmlID": "emissionsCO2Form"
+	},
+	"7": {
+		"description": "diesel voiture neuf hybride",
+		"nbFils": 2,
+		"trueFils": 14,
+		"falseFils": 9,
+		"htmlID": "hybrideForm"
+	},
+	"8": {
+		"description": "resultat diesel imposable | achat : voiture neuf electrique",
+		"nbFils": 0,
+		"prime": 2500,
+		"bonusEco": 6000,
+		"htmlID": "resultat"
+	},
+	"9": {
+		"description": "resultat diesel imposable | achat : voiture neuf ca1 (+50 non hybride) (51-122) et occasion electrique et ca1",
+		"nbFils": 0,
+		"prime": 1000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"10": {
+		"description": "diesel voiture occasion classement critair",
+		"nbFils": 4,
+		"electriqueFils": 9,
+		"ca1Fils": 9,
+		"ca2Fils": -999,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"11": {
+		"description": "diesel et essence moto etat vehicule a acheter",
+		"nbFils": 2,
+		"neufFils": 12,
+		"occasionFils": -999,
+		"htmlID": "etatVehiculeForm"
+	},
+	"12": {
+		"description": "diesel et essence moto neuf classement critair",
+		"nbFils": 4,
+		"electriqueFils": 13,
+		"ca1Fils": -999,
+		"ca2Fils": -999,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"13": {
+		"description": "diesel et essence imposable | achat : moto neuf electrique",
+		"nbFils": 0,
+		"prime": 100,
+		"bonusEco": 900,
+		"htmlID": "resultat"
+	},
+	"14": {
+		"description": "resultat diesel imposable | achat : voiture neuf hybride",
+		"nbFils": 0,
+		"prime": 2500,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"15": {
+		"description": "diesel et essence  non imposable moto etat vehicule a acheter",
+		"nbFils": 2,
+		"neufFils": 16,
+		"occasionFils": -999,
+		"htmlID": "etatVehiculeForm"
+	},
+	"16": {
+		"description": "diesel et essence  non imposable moto neuf emissions CO2 ca1",
+		"nbFils": 4,
+		"electriqueFils": 17,
+		"ca1Fils": -999,
+		"ca2Fils": -999,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"17": {
+		"description": "resultat diesel et essence non imposable | achat : moto neuf electrique",
+		"nbFils": 0,
+		"prime": 1100,
+		"bonusEco": 900,
+		"htmlID": "resultat"
+	},
+	"18": {
+		"description": "diesel non imposable type vehicule a acheter",
+		"nbFils": 2,
+		"voitureFils": 19,
+		"motoFils": 15,
+		"htmlID": "typeVehiculeAcheterForm"
+	},
+	"19": {
+		"description": "diesel non imposable voiture etat vehicule a acheter",
+		"nbFils": 2,
+		"neufFils": 20,
+		"occasionFils": 21,
+		"htmlID": "etatVehiculeForm"
+	},
+	"20": {
+		"description": "diesel non imposable voiture neuf classement critair",
+		"nbFils": 4,
+		"electriqueFils": 22,
+		"ca1Fils": 25,
+		"ca2Fils": 33,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"21": {
+		"description": "diesel non imposable voiture occasion classement critair",
+		"nbFils": 4,
+		"electriqueFils": 34,
+		"ca1Fils": 25,
+		"ca2Fils": 33,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"22": {
+		"description": "diesel et essence non imposable voiture neuf electrique grand rouleur",
+		"nbFils": 2,
+		"trueFils": 23,
+		"falseFils": 24,
+		"htmlID": "grandRouleurForm"
+	},
+	"23": {
+		"description": "resultat et essence diesel non imposable grand rouleur | achat : voiture neuf electrique",
+		"nbFils": 0,
+		"prime": 5000,
+		"bonusEco": 6000,
+		"htmlID": "resultat"
+	},
+	"24": {
+		"description": "resultat et essence diesel non imposable non grand rouleur | achat : voiture neuf electrique",
+		"nbFils": 0,
+		"prime": 2500,
+		"bonusEco": 6000,
+		"htmlID": "resultat"
+	},
+	"25": {
+		"description": "diesel non imposable voiture neuf et occasion emissions CO2 ca1",
+		"nbFils": 3,
+		"-50Fils": 26,
+		"51-122Fils": 30,
+		"+122Fils": -999,
+		"htmlID": "emissionsCO2Form"
+	},
+	"26": {
+		"description": "diesel non imposable voiture neuf et occasion hybride",
+		"nbFils": 2,
+		"trueFils": 27,
+		"falseFils": 30,
+		"htmlID": "hybrideForm"
+	},
+	"27": {
+		"description": "diesel non imposable voiture neuf et occasion hybride grand rouleur",
+		"nbFils": 2,
+		"trueFils": 28,
+		"falseFils": 29,
+		"htmlID": "grandRouleurForm"
+	},
+	"28": {
+		"description": "resultat diesel et essence non imposable grand rouleur | achat : voiture neuf et occasion hybride",
+		"nbFils": 0,
+		"prime": 5000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"29": {
+		"description": "resultat diesel et essence non imposable non grand rouleur | achat : voiture neuf et occasion hybride",
+		"nbFils": 0,
+		"prime": 2500,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"30": {
+		"description": "diesel non imposable voiture neuf et occasion ca1 ca2 grand rouleur",
+		"nbFils": 2,
+		"trueFils": 31,
+		"falseFils": 32,
+		"htmlID": "grandRouleurForm"
+	},
+	"31": {
+		"description": "resultat diesel et essence non imposable grand rouleur | achat : voiture neuf et occasion ca1 (non hybride) ca2",
+		"nbFils": 0,
+		"prime": 4000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"32": {
+		"description": "resultat diesel et essence non imposable non grand rouleur | achat : voiture neuf et occasion ca1 (non hybride) ca2",
+		"nbFils": 0,
+		"prime": 2000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"33": {
+		"description": "diesel non imposable voiture neuf et occasion emissions CO2 ca2",
+		"nbFils": 2,
+		"-=122Fils": 30,
+		"+122Fils": -999,
+		"htmlID": "emissionsCO2Ca2Form"
+	},
+	"34": {
+		"description": "diesel non imposable voiture occasion electrique grand rouleur",
+		"nbFils": 2,
+		"trueFils": 35,
+		"falseFils": 36,
+		"htmlID": "grandRouleurForm"
+	},
+	"35": {
+		"description": "resultat diesel et essence non imposable grand rouleur | achat : voiture occasion electrique",
+		"nbFils": 0,
+		"prime": 5000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"36": {
+		"description": "resultat diesel et essence non imposable non grand rouleur | achat : voiture occasion electrique",
+		"nbFils": 0,
+		"prime": 2500,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"37": {
+		"description": "essence non imposable : avant 1997 ?",
+		"nbFils": 2,
+		"trueFils": 38,
+		"falseFils": -999,
+		"htmlID": "essenceForm"
+	},
+	"38": {
+		"description": "essence non imposable type vehicule a acheter",
+		"nbFils": 2,
+		"voitureFils": 51,
+		"motoFils": 15,
+		"htmlID": "typeVehiculeAcheterForm"
+	},
+	"39": {
+		"description": "essence imposable : avant 1997 ?",
+		"nbFils": 2,
+		"trueFils": 40,
+		"falseFils": -999,
+		"htmlID": "essenceForm"
+	},
+	"40": {
+		"description": "essence imposable type vehicule a acheter",
+		"nbFils": 2,
+		"voitureFils": 41,
+		"motoFils": 11,
+		"htmlID": "typeVehiculeAcheterForm"
+	},
+	"41": {
+		"description": "essence imposable voiture etat vehicule a acheter",
+		"nbFils": 2,
+		"neufFils": 47,
+		"occasionFils": 42,
+		"htmlID": "etatVehiculeForm"
+	},
+	"42": {
+		"description": "essence imposable voiture occasion emissions CO2",
+		"nbFils": 4,
+		"electriqueFils": 43,
+		"ca1Fils": 43,
+		"ca2Fils": -999,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"43": {
+		"description": "resultat essence imposable | achat : voiture occasion electrique ou ca1 ou neuf ca1 non hybride",
+		"nbFils": 0,
+		"prime": 1000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"44": {
+		"description": "resultat essence imposable | achat : voiture neuf electrique",
+		"nbFils": 0,
+		"prime": 2500,
+		"bonusEco": 6000,
+		"htmlID": "resultat"
+	},
+	"45": {
+		"description": "resultat essence imposable | achat : voiture neuf hybride",
+		"nbFils": 0,
+		"prime": 2500,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"46": {
+		"description": "essence imposable voiture neuf emissions CO2",
+		"nbFils": 4,
+		"electriqueFils": 44,
+		"ca1Fils": 43,
+		"ca2Fils": -999,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"47": {
+		"description": "essence imposable voiture neuf emissions CO2 ca1",
+		"nbFils": 3,
+		"-50Fils": 26,
+		"51-122Fils": 43,
+		"+122Fils": -999,
+		"htmlID": "emissionsCO2Form"
+	},
+	"48": {
+		"description": "essence imposable voiture neuf hybride",
+		"nbFils": 2,
+		"trueFils": 45,
+		"falseFils": 43,
+		"htmlID": "hybrideForm"
+	},
+	"49": {
+		"description": "resultat essence non imposable non grand rouleur | achat : voiture occasion ca1 (non hybride et -122g/km) / ca2 (-122g/km)",
+		"nbFils": 0,
+		"prime": 2000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"50": {
+		"description": "resultat essence non imposable grand rouleur | achat : voiture occasion ca1 (non hybride et -122g/km) / ca2 (-122g/km)",
+		"nbFils": 0,
+		"prime": 4000,
+		"bonusEco": 0,
+		"htmlID": "resultat"
+	},
+	"51": {
+		"description": "essence non imposable voiture etat vehicule a acheter",
+		"nbFils": 2,
+		"neufFils": 58,
+		"occasionFils": 52,
+		"htmlID": "etatVehiculeForm"
+	},
+	"52": {
+		"description": "essence non imposable voiture occasion emissions CO2",
+		"nbFils": 4,
+		"electriqueFils": 55,
+		"ca1Fils": 53,
+		"ca2Fils": 57,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	},
+	"53": {
+		"description": "essence non imposable voiture neuf et occasion emissions CO2 ca1",
+		"nbFils": 3,
+		"-50Fils": 54,
+		"51-122Fils": 56,
+		"+122Fils": -999,
+		"htmlID": "emissionsCO2Form"
+	},
+	"54": {
+		"description": "essence non imposable voiture neuf et occasion ca1",
+		"nbFils": 2,
+		"trueFils": 55,
+		"falseFils": 56,
+		"htmlID": "hybrideForm"
+	},
+	"55": {
+		"description": "essence non imposable voiture occasion electrique et hybride grand rouleur",
+		"nbFils": 2,
+		"trueFils": 35,
+		"falseFils": 36,
+		"htmlID": "grandRouleurForm"
+	},
+	"56": {
+		"description": "essence non imposable voiture occasion ca1 (non hybride) ca2 grand rouleur",
+		"nbFils": 2,
+		"trueFils": 50,
+		"falseFils": 49,
+		"htmlID": "grandRouleurForm"
+	},
+	"57": {
+		"description": "diesel non imposable voiture neuf et occasion emissions CO2 ca2",
+		"nbFils": 2,
+		"-=122Fils": 56,
+		"+122Fils": -999,
+		"htmlID": "emissionsCO2Ca2Form"
+	},
+	"58": {
+		"description": "essence non imposable voiture neuf emissions CO2",
+		"nbFils": 4,
+		"electriqueFils": 22,
+		"ca1Fils": 53,
+		"ca2Fils": 57,
+		"autresFils": -999,
+		"htmlID": "classementCritairForm"
+	}
+}

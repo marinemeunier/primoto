@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as jsonMarkers from "../markers.json";
+import jsonMarkers from "../markers.json";
 import * as ci from "../constIconeCarte";
 import * as esri from 'esri-leaflet';
 
@@ -21,6 +21,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 	
+	// @@ts-ignore
 	var m = jsonMarkers.markers;
 	
 	for ( var i=0; i < m.length; i++ )
