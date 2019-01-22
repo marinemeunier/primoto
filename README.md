@@ -6,7 +6,7 @@
 
 ## Contexte :
 Projet fictif pour l'UE Qualité Logiciel de L3 Miage à Paris Descartes composé par les 5 étudiants suivants :
-* Omair ARSHAD - Developpeur fullstack - [OmairAI](https://github.com/omairAI)
+* Omair ARSHAD - Developpeur fullstack - [OmairAI](https://github.com/OmairAI)
 * Fabien HOS - Developpeur back - [Surybang](https://github.com/surybang)
 * Elisabeth MERIC - Developpeur front & UX Designer - [Eliskimo](https://github.com/eliskimo)
 * Tigran GRIGORIAN - Expert SI - [Mangoover](https://github.com/mangoover)
@@ -17,9 +17,9 @@ Professeur encadrant :
 
 ## Spécifications techniques :
 ### Technos utilisées : 
-* Java Script
+* JavaScript / TypeScript
 * NodeJS
-* Maria DB
+* Angular
 
 ## Qu’est-ce que cette prime à la conversion ? 
 
