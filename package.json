@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "mocha --no-deprecation --compilers js:babel-core/register src/app/recherche-par-plaque/recherche-par-plaque.component.spec.ts",
+    "test": "mocha --compilers js:babel-core/register src/app/calcul-prime.spec.ts",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
     "@types/leaflet": "^1.2.14",
+    "babel-loader": "^8.0.0-beta.6",
     "babelify": "^10.0.0",
     "bootstrap": "^4.2.1",
     "browserify": "^16.2.3",
@@ -39,19 +40,18 @@
     "@angular/cli": "^7.2.1",
     "@angular/compiler-cli": "^7.1.4",
     "@angular/language-service": "^7.1.4",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
     "@types/chai": "^4.1.7",
-    "@types/jasmine": "^2.8.14",
-    "@types/jasminewd2": "~2.0.3",
     "@types/mocha": "^5.2.5",
     "@types/node": "^8.10.39",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "codelyzer": "~4.5.0",
-    "jasmine": "^3.3.1",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "jasmine-ts": "^0.3.0",
     "karma": "^3.1.4",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
@@ -66,7 +66,7 @@
   },
   "babel": {
     "presets": [
-      "es2015"
+      "@babel/preset-env"
     ]
   }
 }

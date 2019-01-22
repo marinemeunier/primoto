@@ -40,5 +40,16 @@ export class CalculPrime {
 																					+ "Bonus eco de " + this.jsonParse[this.idActuel]["bonusEco"] + "€.";
     }
   }
+  
+  public testCalculPrime(etapeTab) {
+	for(var i = 0; i < etapeTab.length; i++) {
+	  if (this.jsonParse[this.idActuel]["nbFils"] != 0) {
+		this.idActuel = this.jsonParse[this.idActuel][etapeTab[i] + "Fils"];
+	  }
+	  if (this.jsonParse[this.idActuel]["nbFils"] == 0) {
+		return {"prime": this.jsonParse[this.idActuel]["prime"], "bonusEco": this.jsonParse[this.idActuel]["bonusEco"]};
+	  }
+    }
+  }
 
 }

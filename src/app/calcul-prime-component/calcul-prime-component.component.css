@@ -16,3 +16,23 @@
   font-weight: 400;
   font-family: 'Montserrat';
 }
+
+#conteneurForm {
+  position: relative;
+  height: 70%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  text-align:center;
+	
+}
+
+#questionForm {
+	font-weight: bold;
+}
+
+#initialForm {
+	height:60%;
+
+}
