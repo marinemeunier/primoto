@@ -35,7 +35,7 @@ export class CalculPrimeComponentComponent implements OnInit {
     else {
 	  document.getElementById("majeurFranceForm").style.display = "none";
 	  document.getElementById("resultat").style.display = "initial";
-	  document.getElementById("resultat").innerHTML = "Vous n'êtes pas éligible à la prime à la conversion.";
+	  document.getElementById("resultatPhrase").innerHTML = "Vous n'êtes pas éligible à la prime à la conversion.";
     }
   }
 
@@ -73,6 +73,16 @@ export class CalculPrimeComponentComponent implements OnInit {
   traitement(form: NgForm) {
 	var reponse = form.value['reponse'] + "Fils";
 	this.cp.etapeCalculPrime(reponse);
+  }
+  
+  reinitialiser(form: NgForm) {
+	this.cp = new CalculPrime();
+	document.getElementById("resultat").style.display = "none";
+	document.getElementById("majeurFranceForm").style.display = "initial";
+  }
+  
+  afficherCarte(form: NgForm) {
+	  
   }
 
 }

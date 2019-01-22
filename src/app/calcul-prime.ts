@@ -9,7 +9,7 @@ export class CalculPrime {
   constructor() {
     this.idActuel = null;
 	this.idPrecedent = null;
-	this.jsonParse = json["default"];
+	this.jsonParse = json;
   }
 
   public getIdActuel() {
@@ -35,7 +35,7 @@ export class CalculPrime {
       for(var i = 0; i < c.length; i++) {
         c[i].style.display = "none";
       }
-      document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "initial";
+      document.getElementById("resultat").style.display = "initial";
 	  document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).innerHTML = "Prime de " + this.jsonParse[this.idActuel]["prime"] + "€.<br>"
 																					+ "Bonus eco de " + this.jsonParse[this.idActuel]["bonusEco"] + "€.";
     }

@@ -4,7 +4,7 @@
 		"nbFils": 0,
 		"prime": 0,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"1": {
 		"description": "diesel imposable : avant 2001 ?",
@@ -63,14 +63,14 @@
 		"nbFils": 0,
 		"prime": 2500,
 		"bonusEco": 6000,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"9": {
 		"description": "resultat diesel imposable | achat : voiture neuf ca1 (+50 non hybride) (51-122) et occasion electrique et ca1",
 		"nbFils": 0,
 		"prime": 1000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"10": {
 		"description": "diesel voiture occasion classement critair",
@@ -102,14 +102,14 @@
 		"nbFils": 0,
 		"prime": 100,
 		"bonusEco": 900,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"14": {
 		"description": "resultat diesel imposable | achat : voiture neuf hybride",
 		"nbFils": 0,
 		"prime": 2500,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"15": {
 		"description": "diesel et essence  non imposable moto etat vehicule a acheter",
@@ -132,7 +132,7 @@
 		"nbFils": 0,
 		"prime": 1100,
 		"bonusEco": 900,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"18": {
 		"description": "diesel non imposable type vehicule a acheter",
@@ -178,14 +178,14 @@
 		"nbFils": 0,
 		"prime": 5000,
 		"bonusEco": 6000,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"24": {
 		"description": "resultat et essence diesel non imposable non grand rouleur | achat : voiture neuf electrique",
 		"nbFils": 0,
 		"prime": 2500,
 		"bonusEco": 6000,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"25": {
 		"description": "diesel non imposable voiture neuf et occasion emissions CO2 ca1",
@@ -214,14 +214,14 @@
 		"nbFils": 0,
 		"prime": 5000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"29": {
 		"description": "resultat diesel et essence non imposable non grand rouleur | achat : voiture neuf et occasion hybride",
 		"nbFils": 0,
 		"prime": 2500,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"30": {
 		"description": "diesel non imposable voiture neuf et occasion ca1 ca2 grand rouleur",
@@ -235,14 +235,14 @@
 		"nbFils": 0,
 		"prime": 4000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"32": {
 		"description": "resultat diesel et essence non imposable non grand rouleur | achat : voiture neuf et occasion ca1 (non hybride) ca2",
 		"nbFils": 0,
 		"prime": 2000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"33": {
 		"description": "diesel non imposable voiture neuf et occasion emissions CO2 ca2",
@@ -263,14 +263,14 @@
 		"nbFils": 0,
 		"prime": 5000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"36": {
 		"description": "resultat diesel et essence non imposable non grand rouleur | achat : voiture occasion electrique",
 		"nbFils": 0,
 		"prime": 2500,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"37": {
 		"description": "essence non imposable : avant 1997 ?",
@@ -321,21 +321,21 @@
 		"nbFils": 0,
 		"prime": 1000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"44": {
 		"description": "resultat essence imposable | achat : voiture neuf electrique",
 		"nbFils": 0,
 		"prime": 2500,
 		"bonusEco": 6000,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"45": {
 		"description": "resultat essence imposable | achat : voiture neuf hybride",
 		"nbFils": 0,
 		"prime": 2500,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"46": {
 		"description": "essence imposable voiture neuf emissions CO2",
@@ -366,14 +366,14 @@
 		"nbFils": 0,
 		"prime": 2000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"50": {
 		"description": "resultat essence non imposable grand rouleur | achat : voiture occasion ca1 (non hybride et -122g/km) / ca2 (-122g/km)",
 		"nbFils": 0,
 		"prime": 4000,
 		"bonusEco": 0,
-		"htmlID": "resultat"
+		"htmlID": "resultatPhrase"
 	},
 	"51": {
 		"description": "essence non imposable voiture etat vehicule a acheter",

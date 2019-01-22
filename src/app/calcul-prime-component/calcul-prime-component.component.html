@@ -106,13 +106,14 @@
   </form>
 
   <div id="resultat">
-	<form id="reinitialiserForm" (ngSubmit)="reinitialiserForm" #reinitialiserForm="ngForm">
-		<button type="submit">Terminer</button>
-	</form>	
-	<form id="concessionForm" (ngSubmit)="concessionForm" #concessionForm="ngForm">
-		<button type="submit">Voir la carte des concessionnaires partenaires</button>
-	</form>	
-  </div>
+	<span id="resultatPhrase"></span>
+	<form id="reinitialiserForm" (ngSubmit)="reinitialiser(reinitialiserForm)" #reinitialiserForm="ngForm">
+		<button type="submit">Réévaluer</button>
+	</form>
+	<form id="concessionForm" (ngSubmit)="afficherCarte(concessionForm)" #concessionForm="ngForm">
+		<button type="submit">Acheter une voiture</button>
+	</form>
+  </div> 
 
 </div>
 </div>
