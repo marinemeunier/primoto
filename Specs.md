@@ -19,30 +19,27 @@ Problème : l’Argus n’as pas voulu nous donner accès à l’API.
  
 ### Hébergement 
 *	🌍 Windows Serveur 2016 avec service IIS
-*	🌍 Domaine : [omair.fr](https://omair.fr)
-*	🌍 Nom dns : primoto.omair.fr [primoto.omair.fr](https://primoto.omair.fr)
+*	🌍 Domaine : [omair.fr](http://omair.fr)
+*	🌍 Nom dns : primoto.omair.fr [primoto.omair.fr](http://primoto.omair.fr)
 
 ### Applications utilisées 
 *	Outil de gestion des dépendances
 	*	NPM - [www.npmjs.com](https://www.npmjs.com/)
-*	Outil d’exécution des tests
-	*	Karma -  [www.karma-runner.github.io](https://karma-runner.github.io/)
 *	Outil d’intégration continue
 	*	Jenkins - [www.jenkins.io](https://jenkins.io/)
 
 
 ### Langage de programmation, Librairies & Frameworks 
-*	Java Script (.js)
-*	Type Scrypt
+*	JavaScript
+*	TypeScript
 *	Angular
 *	Node JS
 * HTML / CSS
-	*	CSS grid
-
+  * Flex Box
+* JSON
 
 
 ### Base de données :
-*	bdd_voitures.csv
 *	bdd_concessionnaires.json
 *	regles_gestion.json
 
