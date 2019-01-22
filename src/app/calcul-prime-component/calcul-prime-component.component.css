@@ -1,0 +1,18 @@
+#majeurFranceForm, 
+#imposableForm, 
+#typeVoitureForm, 
+#dieselImposableForm, 
+#dieselNImposableForm, 
+#typeVehiculeAcheterForm, 
+#etatVehiculeForm, 
+#classementCritairForm, 
+#emissionsCO2Form, 
+#hybrideForm, 
+#resultat, 
+#grandRouleurForm, 
+#emissionsCO2Ca2Form, 
+#essenceForm {
+  display: none;
+  font-weight: 400;
+  font-family: 'Montserrat';
+}
