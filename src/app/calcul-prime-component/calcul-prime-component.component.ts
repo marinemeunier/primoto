@@ -82,7 +82,8 @@ export class CalculPrimeComponentComponent implements OnInit {
   }
   
   afficherCarte(form: NgForm) {
-	  
+	document.getElementById('myModal').style.display = "block";
+	window.dispatchEvent(new Event('resize'));
   }
 
 }

@@ -73,28 +73,6 @@ body {
   background-color: #f1f1f1;
 }
 
-/*input {
-  padding: 13px;
-  width: 70%;
-  font-weight: 400;
-  font-family: 'Montserrat';
-  border-bottom: 2px solid #aaaaaa;
-  border-right: 1px solid #fff;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
-}
-
-input:hover {
-  border-bottom : 2px solid green;
-  
-  
-}
-
-input:focus {
-  outline:0;
-  
-}*/
-
 /* erreur lorsque champs vides */
 input.invalid {
   

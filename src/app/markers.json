@@ -1,94 +1,299 @@
 {
-	"markers": [
-		{
-			"id": 1,
-			"nom": "AUTOMOBILE SUFFREN",
-			"marque": "Volkswagen",
-			"url": "http://espacesuffren.com/",
-			"tel": "01 53 58 10 00",
-			"adresse": "40 Avenue de Suffren, 75015 Paris",
-			"lat": 48.854303,
-			"lng": 2.295719
-		},
-		{
-			"id": 2,
-			"nom": "RENAULT PARIS PICPUS",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.paris-picpus.html",
-			"tel": "01 44 74 08 71",
-			"adresse": "42 Rue de Picpus, 75012 Paris",
-			"lat": 48.844719,
-			"lng": 2.395727
-		},
-		{
-			"id": 3,
-			"nom": "RENAULT PARIS CHARONNE",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.paris-charonne.html",
-			"tel": "01 53 27 61 70",
-			"adresse": "55 Boulevard de Charonne, 75011 Paris",
-			"lat": 48.852805,
-			"lng": 2.396948
-		},
-		{
-			"id": 4,
-			"nom": "RENAULT PARIS CHAMPIONNET",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.paris-championnet.html",
-			"tel": "01 42 28 36 36",
-			"adresse": "205 Rue Championnet, 75018 Paris",
-			"lat": 48.893768,
-			"lng": 2.331452
-		},
-		{
-			"id": 5,
-			"nom": "RENAULT PARIS ETOILE",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.paris-rive-droite.html",
-			"tel": "01 53 53 60 60",
-			"adresse": "23 Boulevard de Courcelles, 75008 Paris",
-			"lat": 48.880842,
-			"lng": 2.314431
-		},
-		{
-			"id": 6,
-			"nom": "L'ATELIER RENAULT PARIS",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.paris-atelier.html",
-			"tel": "01 76 84 19 19",
-			"adresse": "70 Rue Pierre Charron, 75008 Paris",
-			"lat": 48.870126,
-			"lng": 2.30491
-		},
-		{
-			"id": 7,
-			"nom": "RENAULT PARIS GRENELLE",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.paris-rive-gauche.html",
-			"tel": "01 44 37 20 20",
-			"adresse": "29 Quai de Grenelle, 75015 Paris",
-			"lat": 48.852589,
-			"lng": 2.28686
-		},
-		{
-			"id": 8,
-			"nom": "RENAULT PARIS LEFEBVRE",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.renault-lefebvre.html",
-			"tel": "01 44 37 20 20",
-			"adresse": "96 Boulevard Lefebvre, 75015 Paris",
-			"lat": 48.829807,
-			"lng": 2.296266
-		},
-		{
-			"id": 9,
-			"nom": "RENAULT PARIS SAINT JACQUES",
-			"marque": "Renault",
-			"url": "https://www.renault.fr/concessionnaire.paris-st-jacques.html",
-			"tel": "01 44 37 20 20",
-			"adresse": "20 Rue du Faubourg Saint-Jacques, 75014 Paris",
-			"lat": 48.837994,
-			"lng": 2.338973
-		}
-	]
+    "1": {
+        "nom": "RENAULT PARIS PICPUS",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.paris-picpus.html",
+        "tel": "01 44 74 08 71",
+        "adresse": "42 Rue de Picpus, 75012 Paris",
+        "lat": 48.844719,
+        "lng": 2.395727
+    },
+    "2": {
+        "nom": "RENAULT PARIS CHARONNE",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.paris-charonne.html",
+        "tel": "01 53 27 61 70",
+        "adresse": "55 Boulevard de Charonne, 75011 Paris",
+        "lat": 48.852805,
+        "lng": 2.396948
+    },
+    "3": {
+        "nom": "RENAULT PARIS CHAMPIONNET",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.paris-championnet.html",
+        "tel": "01 42 28 36 36",
+        "adresse": "205 Rue Championnet, 75018 Paris",
+        "lat": 48.893768,
+        "lng": 2.331452
+    },
+    "4": {
+        "nom": "RENAULT PARIS ETOILE",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.paris-rive-droite.html",
+        "tel": "01 53 53 60 60",
+        "adresse": "23 Boulevard de Courcelles, 75008 Paris",
+        "lat": 48.880842,
+        "lng": 2.314431
+    },
+    "5": {
+        "nom": "L'ATELIER RENAULT PARIS",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.paris-atelier.html",
+        "tel": "01 76 84 19 19",
+        "adresse": "70 Rue Pierre Charron, 75008 Paris",
+        "lat": 48.870126,
+        "lng": 2.30491
+    },
+    "6": {
+        "nom": "RENAULT PARIS GRENELLE",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.paris-rive-gauche.html",
+        "tel": "01 44 37 20 20",
+        "adresse": "29 Quai de Grenelle, 75015 Paris",
+        "lat": 48.852589,
+        "lng": 2.28686
+    },
+    "7": {
+        "nom": "RENAULT PARIS LEFEBVRE",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.renault-lefebvre.html",
+        "tel": "01 44 37 20 20",
+        "adresse": "96 Boulevard Lefebvre, 75015 Paris",
+        "lat": 48.829807,
+        "lng": 2.296266
+    },
+    "8": {
+        "nom": "RENAULT PARIS SAINT JACQUES",
+        "marque": "Renault",
+        "url": "https://www.renault.fr/concessionnaire.paris-st-jacques.html",
+        "tel": "01 44 37 20 20",
+        "adresse": "20 Rue du Faubourg Saint-Jacques, 75014 Paris",
+        "lat": 48.837994,
+        "lng": 2.338973
+    },
+    "9": {
+        "nom": "AUTOMOBILE SUFFREN",
+        "marque": "Volkswagen",
+        "url": "http://espacesuffren.com/",
+        "tel": "01 53 58 10 00",
+        "adresse": "40 Avenue de Suffren, 75015 Paris",
+        "lat": 48.854303,
+        "lng": 2.295719
+    },
+    "10": {
+        "nom": "AXONE AUTOMOBILES SAS",
+        "marque": "Volkswagen",
+        "url": "http://web.volkswagen.gr-vw.fr/ce/axoneautomobilessas-paris/",
+        "tel": "01 45 88 45 00",
+        "adresse": "176 Avenue d'Italie, 75013 Paris",
+        "lat": 48.82067,
+        "lng": 2.358691
+    },
+    "11": {
+        "nom": "MICHEL ANGE SA",
+        "marque": "Volkswagen",
+        "url": "http://michelange-paris16.fr/",
+        "tel": "01 40 71 12 12",
+        "adresse": "97 Rue Michel Ange, 75016 Paris",
+        "lat": 48.839717,
+        "lng": 2.258152
+    },
+    "12": {
+        "nom": "FAIR PLAY Trocadéro",
+        "marque": "Volkswagen",
+        "url": "http://www.fairplayauto.com/",
+        "tel": "01 53 70 18 00",
+        "adresse": "22 Rue Saint-Didier, 75116 Paris",
+        "lat": 48.866269,
+        "lng": 2.287311
+    },
+    "13": {
+        "nom": "FAIR PLAY AUTOMOBILE SA",
+        "marque": "Volkswagen",
+        "url": "http://www.fairplayauto.com/",
+        "tel": "01 44 15 84 15",
+        "adresse": "88 Boulevard Pereire, 75017 Paris",
+        "lat": 48.886764,
+        "lng": 2.300179
+    },
+    "14": {
+        "nom": "VOLKSWAGEN PARIS EST",
+        "marque": "Volkswagen",
+        "url": "http://volkswagenparisest-paris20.fr/",
+        "tel": "01 46 59 44 44",
+        "adresse": "105 Cours de Vincennes, 75020 Paris",
+        "lat": 48.84758,
+        "lng": 2.409937
+    },
+    "15": {
+        "nom": "DAMREMONT PALACE AUTOMOBILE SA",
+        "marque": "Volkswagen",
+        "url": "https://www.volkswagen-paris18.fr/volkswagen/",
+        "tel": "01 44 92 75 44",
+        "adresse": "118 Rue Damrémont, 75018 Paris",
+        "lat": 48.894731,
+        "lng": 2.337493
+    },
+    "16": {
+        "nom": "Tesla Paris-Madeleine",
+        "marque": "Tesla",
+        "url": "https://www.tesla.com/fr_FR/findus/location/store/parismadeleine",
+        "tel": "01 73 01 07 78",
+        "adresse": "3 Boulevard Malesherbes, 75008 Paris",
+        "lat": 48.869922,
+        "lng": 2.323066
+    },
+    "17": {
+        "nom": "PSA RETAIL PARIS 10 GARE DE L'EST",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/paris10-garedelest",
+        "tel": "01 40 05 66 10",
+        "adresse": "180 Rue du Faubourg Saint-Martin, 75010 Paris",
+        "lat": 48.877971,
+        "lng": 2.362342
+    },
+    "18": {
+        "nom": "LOCARSON",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/locarson",
+        "tel": "01 40 09 10 10",
+        "adresse": "166 Rue de Charonne, 75011 Paris",
+        "lat": 48.85579,
+        "lng": 2.392148
+    },
+    "19": {
+        "nom": "AUTOSPORT DAUSMENIL",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/daumesnil-paris",
+        "tel": "01 43 43 30 53",
+        "adresse": "13 Rue Dugommier, 75012 Paris",
+        "lat": 48.839874,
+        "lng": 2.391119
+    },
+    "20": {
+        "nom": "PSA Retail Paris Italie",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/paris13-italie",
+        "tel": "01 56 10 56 30",
+        "adresse": "105 Bis Avenue d'Italie, 75013 Paris",
+        "lat": 48.822758,
+        "lng": 2.358732
+    },
+    "21": {
+        "nom": "PSA Retail Paris Alésia",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/paris14-alesia",
+        "tel": "01 56 10 56 20",
+        "adresse": "5 Avenue Jean Moulin, 75014 Paris",
+        "lat": 48.827339,
+        "lng": 2.326005
+    },
+    "22": {
+        "nom": "PSA Retail Paris 16",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/paris16victorhugo",
+        "tel": "01 44 34 76 76",
+        "adresse": "39 Rue Saint-Didier, 75016 Paris",
+        "lat": 48.866926,
+        "lng": 2.283493
+    },
+    "23": {
+        "nom": "EXELMANS AUTOMOBILES",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/exelmans-paris",
+        "tel": "01 45 24 50 30",
+        "adresse": "13 Boulevard Exelmans, 75016 Paris",
+        "lat": 48.840071,
+        "lng": 2.265873
+    },
+    "24": {
+        "nom": "PSA VO FRANCE PARIS PERNET",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/vo-paris-pernet",
+        "tel": "01 53 68 15 15",
+        "adresse": "10 Place Etienne Pernet, 75015 Paris",
+        "lat": 48.843399,
+        "lng": 2.292309
+    },
+    "25": {
+        "nom": "PSA RETAIL RÉPUBLIQUE",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/paris-republique",
+        "tel": "01 49 29 62 62",
+        "adresse": "62 Avenue de la République, 75011 Paris",
+        "lat": 48.864676,
+        "lng": 2.376711
+    },
+    "26": {
+        "nom": "PSA RETAIL PARIS PORTE DE VERSAILLES",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/paris-porte-versailles",
+        "tel": "01 44 19 20 60",
+        "adresse": "75 Boulevard Lefebvre, 75015 Paris",
+        "lat": 48.830741,
+        "lng": 2.293987
+    },
+    "27": {
+        "nom": "PSA RETAIL PARIS ALESIA",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/paris-alesia",
+        "tel": "01 56 10 57 90",
+        "adresse": "98 Avenue du Général Leclerc, 75014 Paris",
+        "lat": 48.827008,
+        "lng": 2.326244
+    },
+    "28": {
+        "nom": "PSA RETAIL NATION",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/paris-nation",
+        "tel": "01 43 46 27 00",
+        "adresse": "42 Cours de Vincennes, 75012 Paris",
+        "lat": 48.847386,
+        "lng": 2.402431
+    },
+    "29": {
+        "nom": "PSA RETAIL GRENELLE PARIS 15",
+        "marque": "Peugeot",
+        "url": "https://concessions.peugeot.fr/paris15-grenelle",
+        "tel": "01 56 10 56 37",
+        "adresse": "144 Boulevard de Grenelle, 75015 Paris",
+        "lat": 48.848478,
+        "lng": 2.298989
+    },
+    "30": {
+        "nom": "GARAGE DU FAUBOURG",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/reparateur-paris-03",
+        "tel": "01 43 72 70 76",
+        "adresse": "33 Rue de Reuilly, 75012 Paris",
+        "lat": 48.847601,
+        "lng": 2.386739
+    },
+    "31": {
+        "nom": "GARAGE CITE LECOURBE",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/reparateur-paris-12",
+        "tel": "01 47 83 22 18",
+        "adresse": "88 Rue Lecourbe, 75015 Paris",
+        "lat": 48.843461,
+        "lng": 2.304618
+    },
+    "32": {
+        "nom": "CICOV LEBAR",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/reparateur-paris-08",
+        "tel": "01 46 27 98 66",
+        "adresse": "6 Rue Jacques Cartier, 75018 Paris",
+        "lat": 48.894007,
+        "lng": 2.329846
+    },
+    "33": {
+        "nom": "AUTO SPECIALITES",
+        "marque": "Citroen",
+        "url": "https://reseau.citroen.fr/reparateur-paris-05",
+        "tel": "01 47 97 20 59",
+        "adresse": "42 Rue Belgrand, 75020 Paris",
+        "lat": 48.864555,
+        "lng": 2.403849
+    }
 }

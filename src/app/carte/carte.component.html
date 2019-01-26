@@ -1,1 +1,31 @@
-<div id="map"></div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="document.getElementById('myModal').style.display = 'none'">&times;</span>
+      <h2>Carte de nos partenaires</h2>
+    </div>
+    <div class="modal-body">
+      <div id="map"></div>
+    </div>
+    <div class="modal-footer">
+	  <span class="spanHaut">
+		  <form id="rechercheParAdresseForm" >
+			<input id="adresse" type="text" placeholder="Centrer sur une adresse ou un lieu..." #adresse>
+			<button type="submit" (click)="rechercheParAdresse(adresse.value)">Valider</button>
+		    <button (click)="carteParDefaut()">Réinitialiser</button>
+		  </form>
+	  </span>
+      <span class="spanBas">
+		  Filtrer par marque :
+		  <label><input type="checkbox" (change)="miseAJourCarte($event)" value="Citroen" checked> Citroen</label>
+		  <label><input type="checkbox" (change)="miseAJourCarte($event)" value="Peugeot" checked> Peugeot</label>
+		  <label><input type="checkbox" (change)="miseAJourCarte($event)" value="Renault" checked> Renault</label>
+		  <label><input type="checkbox" (change)="miseAJourCarte($event)" value="Tesla" checked> Tesla</label>
+		  <label><input type="checkbox" (change)="miseAJourCarte($event)" value="Volkswagen" checked> Volkswagen</label>
+	  </span>
+    </div>
+  </div>
+
+</div>
