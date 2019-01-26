@@ -1,35 +1,42 @@
 # PRIMOTO - Spécifications 🚗 💸 🎅🏻
+
 ## Description de la Solution
+
 ### Caractéristiques de la Solution
+
 Proposer une appli client/serveur qui permet aux utilisateurs de savoir à combien est estimée la reprise de leur véhicule et de les mettre en relation avec les concessionnaires automobiles autour d’eux. 
 
 A l’inverse l’application peut être utilisée pour permettre aux concessionnaires d’améliorer leur prospection et de pouvoir avoir une publicité. 
 
 ### Historique de la solution 
-Initialement l’application devait avoir un workflow simplifié en utilisant la plaque d’immatriculation du véhicule grâce à l’API de l’Argus. 
+
+Initialement l’application devait avoir un workflow simplifié en utilisant la plaque d’immatriculation du véhicule grâce à l’API de l’Argus.
 
 Problème : l’Argus n’as pas voulu nous donner accès à l’API.
 
-### Acteurs du Projet :
+### Acteurs du Projet
+
 * 🇵🇰Omair ARSHAD - Developpeur back - [OmairAI](https://github.com/omairAI)
 * 👱🏻‍♀️Elisabeth MERIC - Developpeur front - Eliskimo
 * 🧔🏼Fabien HOS - Testeur - [Surybang](https://github.com/surybang)
 * 🇷🇺Tigran GRIGORIAN – Ux & UI Designer - [Mangoover](https://github.com/mangoover)
 * 👨🏻‍💻Yannis LE GUEN - Chef de projet - [YLGN](https://github.com/yannisleguen) 
  
-### Hébergement 
+### Hébergement
+
 *	🌍 Windows Serveur 2016 avec service IIS
 *	🌍 Domaine : [omair.fr](http://omair.fr)
 *	🌍 Nom dns : primoto.omair.fr [primoto.omair.fr](http://primoto.omair.fr)
 
-### Applications utilisées 
+### Applications utilisées
+
 *	Outil de gestion des dépendances
 	*	NPM - [www.npmjs.com](https://www.npmjs.com/)
 *	Outil d’intégration continue
 	*	Jenkins - [www.jenkins.io](https://jenkins.io/)
 
+### Langage de programmation, Librairies & Frameworks
 
-### Langage de programmation, Librairies & Frameworks 
 *	JavaScript
 *	TypeScript
 *	Angular
@@ -38,8 +45,8 @@ Problème : l’Argus n’as pas voulu nous donner accès à l’API.
   * Flex Box
 * JSON
 
+### Base de données
 
-### Base de données :
 *	bdd_concessionnaires.json
 *	regles_gestion.json
 
@@ -48,8 +55,11 @@ Problème : l’Argus n’as pas voulu nous donner accès à l’API.
 [www.primealaconversion.gouv.fr](https://www.primealaconversion.gouv.fr/dboneco/accueil/)
 
 ## Aspects métiers
+
 ### Criticité de l’Application
+
 ### Criticité / population des utilisateurs
+
 Les utilisateurs ciblés sont Monsieur et Madame Tout-le-Monde, ils peuvent aussi bien être cadres supérieurs, sans-emploi, ou encore retraités.
 
 L’application se doit alors d’être facilement utilisable et accessible. (Voir chartes graphique et ergonomique **Penser au lien en md**)
@@ -58,15 +68,14 @@ L’application se doit alors d’être facilement utilisable et accessible. (Vo
 
 Non étudier. Le projet étant purement fictif, nous avons décidé de négliger cette étude et de ne pas intégrer un processus de montée en charges.
 
+### SLA
 
-### SLA 
 * Calculer la prime à la conversion de n’importe quel véhicule
 * Proposer les concessionnaires présents dans la ville de Paris
 
 ## Généralités fonctionnelles
 
 ### Versions et Fonctionnalités Principales Associées 
-
 
 | Version  |Fonctionnalité |Contenu|
 |:--------:|:-------------:|:-----|
@@ -76,14 +85,19 @@ Non étudier. Le projet étant purement fictif, nous avons décidé de négliger
 | 4 | FP3 |   Filtrer par constructeur / villes|
 
 ### Cas d’utilisations
+
 #### Cas d’utilisation « Combien je peux gagner ? »
+
 Mettre le lien drive
 
 ## Fonctionnalités détaillées
 
 ### Fonctionnalité “Eligibilité et Calculs de Primes”
+
 #### Description
+
 Dialogue entre l’application et l’utilisateur via l’IHM afin de déterminer la prime à la conversion en cas d'éligibilité.
+
 #### Règles métier
 
 Pour lire l'ensemble des règles métier : [Cliquez ici](https://drive.google.com/open?id=17Dm4rCb6B58sd4iGuFBwQGOL7qRHJdCbW7vsFqD8E18) 
@@ -91,6 +105,9 @@ Pour lire l'ensemble des règles métier : [Cliquez ici](https://drive.google.co
 ### Fonctionnalité “Recherche d’un Concessionnaire”
 
 #### Description
+
 Carte interactive affichant les différents concessionnaires à proximité de l'utilisateur : *On se limitera à Paris pour le projet*
+
 #### Règles métier
+
 Soon
