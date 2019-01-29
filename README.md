@@ -19,13 +19,11 @@ Professeur encadrant :
 
 * Vincent BOUTOUR - [ViBiOh](https://github.com/ViBiOh)
 
-## Spécifications techniques :
+## Technos utilisées
 
-### Technos utilisées
-
-* JavaScript / TypeScript
-* NodeJS
-* Angular
+* Javascript 
+* NodeJS / TypeScript
+* Angular 2.4
 
 ## Qu’est-ce que cette prime à la conversion ?
 
@@ -76,4 +74,7 @@ Le véhicule doit :
 
 * Pour les voitures particulières : le véhicule ne doit pas être vendu dans les 6 mois ni avant d'avoir effectué au moins 6000km,
 * L'acheteur doit être domicilié en France.
- 
+
+
+## Cahier des charges :
+Pour voir la suite rendez-vous [ici](https://github.com/yannisleguen/primoto/blob/master/Specs.md) 
