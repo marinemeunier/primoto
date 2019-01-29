@@ -3,13 +3,15 @@
 }
 
 body {
-	background-image: url("../img/fondVert.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	height:100%;
+  background: url("../img/fondVert.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
-
-
+  
+  
 h1,
 h2,
 h3,
@@ -32,6 +34,7 @@ p {
   align-items: center; 
   justify-content: center;
   width: 100%;
+  margin-top:-5%;
   
 }
 
@@ -90,12 +93,13 @@ button {
   background-color: #4CAF50;
   color: #ffffff;
   border: none;
-  font-weight: 400;
+  font-weight: 700;
   font-family: 'Montserrat';
-  padding: 10px 20px;
+  padding: 20px 40px;
   cursor: pointer;
-  margin: 20px 10px;
-  border-radius:30px;
+  margin-top:20px;
+  border-radius:100px;
+
 }
 
 button:focus {
@@ -145,23 +149,26 @@ button:hover {
   -ms-box-orient: horizontal;
   justify-content: space-between;
   padding:6%;
-  flex-wrap:wrap;
+  
 }
 
 .flex-item-left {
   background: white;
-  padding: 2em;
+  padding: 10% 5%;
   width: 600px;
   text-align: center;
   display:block;
   height:400px;
+
   
 }
 
 .flex-item-right {
-  width: 700px;
+  width: 50%;
   color: white;
   text-align: right;
+  margin-left:10%;
+  margin-right:5%;
   
 }
 
@@ -172,5 +179,31 @@ button:hover {
 .flex-item-right > p {
   font-size:100%;
 }
+
+      @media (max-width: 1100px) {
+        .flex-container {
+          flex-wrap:wrap;
+		  flex-direction:column;
+        }
+
+		
+		.flex-item-left {
+          width:100%;
+		  margin:auto;
+
+
+        }
+		
+		.flex-item-right {
+          width:100%;
+		  text-align:left;
+		  margin-top:3%;
+		  margin-left:0;
+        }
+		
+	  } 
+	  
+
+		
 
 

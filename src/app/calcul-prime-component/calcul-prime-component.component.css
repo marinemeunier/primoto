@@ -19,13 +19,18 @@
 
 #conteneurForm {
   position: relative;
-  height: 70%;
+  height: 250px;
   display: flex; 
   align-items: center; 
   justify-content: center;
   width: 100%;
   text-align:center;
 	
+}
+
+
+#emissionsCO2Ca2Form {
+	font-size:80%;
 }
 
 #questionForm {
