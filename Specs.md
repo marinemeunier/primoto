@@ -62,7 +62,7 @@ Problème : l’Argus n’as pas voulu nous donner accès à l’API.
 
 Les utilisateurs ciblés sont Monsieur et Madame Tout-le-Monde, ils peuvent aussi bien être cadres supérieurs, sans-emploi, ou encore retraités.
 
-L’application se doit alors d’être facilement utilisable et accessible. (Voir chartes graphique et ergonomique **Penser au lien en md**)
+L’application se doit alors d’être facilement utilisable et accessible. (Voir chartes graphique et ergonomique en cliquant : [ici](https://github.com/yannisleguen/primoto/blob/master/charte_graphique.md))
 
 ### Nombre d’utilisateurs
 
@@ -88,26 +88,28 @@ Non étudier. Le projet étant purement fictif, nous avons décidé de négliger
 
 #### Cas d’utilisation « Combien je peux gagner ? »
 
-Mettre le lien drive
-
 ## Fonctionnalités détaillées
 
 ### Fonctionnalité “Eligibilité et Calculs de Primes”
 
 #### Description
-
 Dialogue entre l’application et l’utilisateur via l’IHM afin de déterminer la prime à la conversion en cas d'éligibilité.
 
 #### Règles métier
-
-Pour lire l'ensemble des règles métier : [Cliquez ici](https://drive.google.com/open?id=17Dm4rCb6B58sd4iGuFBwQGOL7qRHJdCbW7vsFqD8E18) 
+Pour lire l'ensemble des règles métier : Cliquez [ici](https://github.com/yannisleguen/primoto/blob/master/regle_gestion.md) 
 
 ### Fonctionnalité “Recherche d’un Concessionnaire”
 
 #### Description
+Carte interactive affichant les différents concessionnaires à proximité de l'utilisateur : *On se limitera à Paris pour le projet* 
 
-Carte interactive affichant les différents concessionnaires à proximité de l'utilisateur : *On se limitera à Paris pour le projet*
+Possibilité de faire une recherche par adresse grace au moteur de recherche de l'API *Nomitatim*
 
 #### Règles métier
+Un concessionnaire est défini par :
+* Un nom
+* Une marque d'un constructeur (Imagée par un logo sur la carte)
+* L'adresse du site web
+* Son numéro de téléphone
+* Son adresse
 
-Soon
