@@ -49,10 +49,8 @@ mocha
 /src/browserslist
 /src/gulpfile.js
 /src/karma.conf.js
-tsconfig.json
 tslint.json
 typings.json
-/src/tsconfig.app.json
-/src/tsconfig.spec.json
 /src/tslint.json
 /src/web.config
+sonar-project.properties
