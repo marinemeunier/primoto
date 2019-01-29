@@ -302,7 +302,7 @@ describe('CalculPrime | Diesel imposable avant 2001 occas', () => {
 
 	it('achat véhicule occas elec ', () => {
 		cp.setIdActuel(1);
-		var resultat = cp.testCalculPrime(["true","vehicule","occasion","electrique"]);
+		var resultat = cp.testCalculPrime(["true","voiture","occasion","electrique"]);
 		expect(resultat["prime"]).to.equal(1000);
 		expect(resultat["bonusEco"]).to.equal(0);
 	});
@@ -315,7 +315,7 @@ describe('CalculPrime | Diesel imposable avant 2001 occas', () => {
 
 	it('achat véhicule occas ca1', () => {
 		cp.setIdActuel(1);
-		var resultat = cp.testCalculPrime(["true","vehicule","occasion","ca1"]);
+		var resultat = cp.testCalculPrime(["true","voiture","occasion","ca1"]);
 		expect(resultat["prime"]).to.equal(1000);
 		expect(resultat["bonusEco"]).to.equal(0);
 	});
@@ -328,7 +328,7 @@ describe('CalculPrime | Diesel imposable avant 2001 occas', () => {
 
 	it('achat véhicule occas ca2', () => {
 		cp.setIdActuel(1);
-		var resultat = cp.testCalculPrime(["true","vehicule","occasion","ca2"]);
+		var resultat = cp.testCalculPrime(["true","voiture","occasion","ca2"]);
 		expect(resultat["prime"]).to.equal(1000);
 		expect(resultat["bonusEco"]).to.equal(0);
 	});
@@ -341,9 +341,24 @@ describe('CalculPrime | Diesel imposable avant 2001 occas', () => {
 
 	it('achat véhicule occas autres', () => {
 		cp.setIdActuel(1);
-		var resultat = cp.testCalculPrime(["true","vehicule","occasion","autres"]);
+		var resultat = cp.testCalculPrime(["true","voiture","occasion","autres"]);
 		expect(resultat["prime"]).to.equal(1000);
 		expect(resultat["bonusEco"]).to.equal(0);
+	});
+
+});
+
+
+//Chemin arbre 37-38-51-58-22-23
+describe('CalculPrime | Essence non imposable avant 1997 ', () => {
+
+	var cp = new CalculPrime();
+
+	it('achat voiture neuve electrique grand rouleur', () => {
+		cp.setIdActuel(1);
+		var resultat = cp.testCalculPrime(["true","voiture","neuf","electrique","true"]);
+		expect(resultat["prime"]).to.equal(5000);
+		expect(resultat["bonusEco"]).to.equal(6000);
 	});
 
 });
