@@ -1,4 +1,4 @@
-#Charte graphique 
+# Charte graphique 
 
 ## Etude de charte graphique pour Primoto :
 Afin de choisir les couleurs et la charte graphique la plus adapté à notre site nous avons tout d’abord examiné ce qui se faisait ailleurs. 
