@@ -158,7 +158,11 @@ button:hover {
   width: 600px;
   text-align: center;
   display:block;
+<<<<<<< HEAD
   height:450px;
+=======
+  height:400px;
+>>>>>>> 576a36fe8a675287fe5e197f7b60a4dff5ed6202
 
   
 }
