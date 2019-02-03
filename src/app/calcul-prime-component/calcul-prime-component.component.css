@@ -19,13 +19,18 @@
 
 #conteneurForm {
   position: relative;
-  height: 70%;
+  height: 250px;
   display: flex; 
   align-items: center; 
   justify-content: center;
   width: 100%;
   text-align:center;
 	
+}
+
+
+#emissionsCO2Ca2Form {
+	font-size:80%;
 }
 
 #questionForm {
@@ -39,4 +44,36 @@
 
 #resultat {
 	height:65%;
+}
+
+#initialBar {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  height: 19px;
+}
+
+#initialBar > div {
+  font-family: 'Montserrat';
+  height: 19px;
+  width: 33%;
+  color: #f1f1f1;
+  display: inline;
+  background-color: #f1f1f1;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+#bar {
+	font-family: 'Montserrat';
+	width: 0%;
+	display: none;
+	-webkit-transition: width 0.2s ease-out;
+    -moz-transition: width 0.2s ease-out;
+    -o-transition: width 0.2s ease-out;
+    transition: width 0.2s ease-out;
 }

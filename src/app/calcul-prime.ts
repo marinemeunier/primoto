@@ -5,11 +5,16 @@ export class CalculPrime {
   private idActuel: number;
   private idPrecedent: number;
   private jsonParse;
+  private maxEtapes;
+  private possibiliteMax;
+  private nbPossibiliteMax;
 
   constructor() {
     this.idActuel = null;
 	this.idPrecedent = null;
 	this.jsonParse = json;
+	this.possibiliteMax = 0;
+	this.nbPossibiliteMax = 0;
   }
 
   public getIdActuel() {
@@ -22,12 +27,15 @@ export class CalculPrime {
 
   public lancementCalculPrime() {
     document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "initial";
+	this.setNbPossibiliteMax(this.idActuel);
   }
   
   public etapeCalculPrime(cleFils: string) {
 	if (this.jsonParse[this.idActuel]["nbFils"] != 0) {
       document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "none";
+	  this.idPrecedent = this.idActuel;
 	  this.idActuel = this.jsonParse[this.idActuel][cleFils];
+	  this.incrementerBar();
 	  document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "initial";
     }
 	if (this.jsonParse[this.idActuel]["nbFils"] == 0) {
@@ -50,6 +58,47 @@ export class CalculPrime {
 		return {"prime": this.jsonParse[this.idActuel]["prime"], "bonusEco": this.jsonParse[this.idActuel]["bonusEco"]};
 	  }
     }
+  }
+  
+  private getEtapesRestantes(idSuivant: number) {
+	
+	this.possibiliteMax += 1;
+	
+	if (this.jsonParse[idSuivant]["nbFils"] != 0) {
+		for (var key in json[idSuivant]) {
+			if (key.includes("Fils") && key != "nbFils") {
+				this.getEtapesRestantes(this.jsonParse[idSuivant][key]);
+			}
+		}
+	}
+  }
+  
+  public getMaxEtapes(idSuivant: number) {
+	  this.possibiliteMax = 0;
+	  this.getEtapesRestantes(idSuivant);
+  }
+  
+  public setNbPossibiliteMax(idSuivant: number) {
+	  this.possibiliteMax = 0;
+	  this.getEtapesRestantes(idSuivant);
+	  this.nbPossibiliteMax = this.possibiliteMax;
+  }
+  
+  private incrementerBar() {
+	this.getMaxEtapes(this.idActuel);
+	if (this.possibiliteMax == 1) {
+		var widthCSS = 100;
+	}
+	else {
+		var widthCSS = (this.nbPossibiliteMax - this.possibiliteMax) / this.nbPossibiliteMax * 100;
+	}
+	this.setProgressionBar(widthCSS);
+  }
+  
+  public setProgressionBar(widthCSS: number) {
+	document.getElementById("bar").style.width = widthCSS + "%";
+	console.log(widthCSS);
+	document.getElementById("bar").innerHTML = Math.round(widthCSS) + "%";
   }
 
 }

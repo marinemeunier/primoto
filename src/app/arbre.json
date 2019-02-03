@@ -6,6 +6,34 @@
 		"bonusEco": 0,
 		"htmlID": "resultatPhrase"
 	},
+	"100": {
+		"description": "majeur domicilié en France ?",
+		"nbFils": 2,
+		"trueFils": 101,
+		"falseFils": -999,
+		"htmlID": "majeurFranceForm"
+	},
+	"101": {
+		"description": "imposable ?",
+		"nbFils": 2,
+		"trueFils": 102,
+		"falseFils": 103,
+		"htmlID": "imposableForm"
+	},
+	"102": {
+		"description": "diesel ou esence ? | imposable",
+		"nbFils": 2,
+		"dieselFils": 1,
+		"essenceFils": 39,
+		"htmlID": "typeVoitureForm"
+	},
+	"103": {
+		"description": "diesel ou esence ? | non imposable",
+		"nbFils": 2,
+		"dieselFils": 2,
+		"essenceFils": 37,
+		"htmlID": "typeVoitureForm"
+	},
 	"1": {
 		"description": "diesel imposable : avant 2001 ?",
 		"nbFils": 2,

@@ -18,11 +18,15 @@ export class CalculPrimeComponentComponent implements OnInit {
   estImposable = null;
   typeVehicule = null;
   premierId = null;
+  maxEtapes = null;
   cp = new CalculPrime();
 
   initial(form: NgForm) {
     document.getElementById("initialForm").style.display = "none";
     document.getElementById("majeurFranceForm").style.display = "initial";
+	document.getElementById("initialBar").style.display = "flex";
+	document.getElementById("initialBarNb1").style.backgroundColor = "#4CAF50";
+	document.getElementById("initialBarNb1").style.color = "#4CAF50";
   }
 
   majeurFrance(form: NgForm) {
@@ -31,6 +35,8 @@ export class CalculPrimeComponentComponent implements OnInit {
     if(this.estMajeur) {
       document.getElementById("majeurFranceForm").style.display = "none";
       document.getElementById("imposableForm").style.display = "initial";
+	  document.getElementById("initialBarNb2").style.backgroundColor = "#4CAF50";
+	  document.getElementById("initialBarNb2").style.color = "#4CAF50";
     }
     else {
 	  document.getElementById("majeurFranceForm").style.display = "none";
@@ -43,6 +49,8 @@ export class CalculPrimeComponentComponent implements OnInit {
     this.estImposable = JSON.parse(form.value['imposable']);
     document.getElementById("imposableForm").style.display = "none";
     document.getElementById("typeVoitureForm").style.display = "initial";
+	document.getElementById("initialBarNb3").style.backgroundColor = "#4CAF50";
+	document.getElementById("initialBarNb3").style.color = "#4CAF50";
   }
 
   typeVoiture(form: NgForm) {
@@ -68,17 +76,27 @@ export class CalculPrimeComponentComponent implements OnInit {
 	}
 	
 	this.cp.lancementCalculPrime();
+	document.getElementById("initialBar").style.display = "none";
+	document.getElementById("bar").style.display = "block";
   }
   
   traitement(form: NgForm) {
 	var reponse = form.value['reponse'] + "Fils";
 	this.cp.etapeCalculPrime(reponse);
+	
   }
   
   reinitialiser(form: NgForm) {
 	this.cp = new CalculPrime();
+	this.cp.setProgressionBar(0);
 	document.getElementById("resultat").style.display = "none";
 	document.getElementById("majeurFranceForm").style.display = "initial";
+	document.getElementById("bar").style.display = "none";
+	document.getElementById("initialBar").style.display = "flex";
+	document.getElementById("initialBarNb2").style.backgroundColor = "#f1f1f1";
+	document.getElementById("initialBarNb2").style.color = "#f1f1f1";
+	document.getElementById("initialBarNb3").style.backgroundColor = "#f1f1f1";
+	document.getElementById("initialBarNb3").style.color = "#f1f1f1";
   }
   
   afficherCarte(form: NgForm) {

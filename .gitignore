@@ -54,3 +54,4 @@ typings.json
 /src/tslint.json
 /src/web.config
 sonar-project.properties
+.scannerwork/
