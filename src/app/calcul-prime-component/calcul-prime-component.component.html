@@ -20,7 +20,8 @@
   <form id="majeurFranceForm" (ngSubmit)="majeurFrance(majeurFranceForm)" #majeurFranceForm="ngForm">
     <span id="questionForm">Êtes-vous majeur domicilié en France ?</span><br><br>
     <label><input type="radio" name="majeurFrance" ngModel value="true" required> Oui</label><br>
-    <label><input type="radio" name="majeurFrance" ngModel value="false"> Non</label><br>
+    <label><input type="radio" name="majeurFrance" ngModel value="false" required> Non</label><br>
+	<button id="prec" type="button" (click)="majeurFranceVersInitial()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
@@ -29,87 +30,99 @@
   <form id="imposableForm" (ngSubmit)="imposable(imposableForm)" #imposableForm="ngForm">
     <span id="questionForm">Êtes-vous imposable au titre de l'avis d'imposition 2018 ?</span><br><br>
     <label><input type="radio" name="imposable" ngModel value="true" required> Oui</label><br>
-    <label><input type="radio" name="imposable" ngModel value="false"> Non</label><br>
+    <label><input type="radio" name="imposable" ngModel value="false" required> Non</label><br>
+	<button id="prec" type="button" (click)="imposableVersMajeurFrance()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="typeVoitureForm" (ngSubmit)="typeVoiture(typeVoitureForm)" #typeVoitureForm="ngForm">
     <span id="questionForm">Précisez le type de votre véhicule destiné au recyclage :</span><br><br>
     <label><input type="radio" name="typeVoiture" ngModel value="diesel" required> Véhicule Diesel</label><br>
-    <label><input type="radio" name="typeVoiture" ngModel value="essence"> Véhicule Essence</label><br>
+    <label><input type="radio" name="typeVoiture" ngModel value="essence" required> Véhicule Essence</label><br>
+	<button id="prec" type="button" (click)="typeVoitureVersImposable()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="dieselImposableForm" (ngSubmit)="traitement(dieselImposableForm)" #dieselImposableForm="ngForm">
     <span id="questionForm">Votre véhicule diesel a-t-il été immatriculé avant 2001 ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="true" required> Oui</label><br>
-    <label><input type="radio" name="reponse" ngModel value="false"> Non</label><br>
+    <label><input type="radio" name="reponse" ngModel value="false" required> Non</label><br>
+	<button id="prec" type="button" (click)="typeMoteurVersTypeVoiture('dieselImposableForm')">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="dieselNImposableForm" (ngSubmit)="traitement(dieselNImposableForm)" #dieselNImposableForm="ngForm">
     <span id="questionForm">Votre véhicule diesel a-t-il été immatriculé avant 2006 ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="true" required> Oui</label><br>
-    <label><input type="radio" name="reponse" ngModel value="false"> Non</label><br>
+    <label><input type="radio" name="reponse" ngModel value="false" required> Non</label><br>
+	<button id="prec" type="button" (click)="typeMoteurVersTypeVoiture('dieselNImposableForm')">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
   
   <form id="essenceForm" (ngSubmit)="traitement(essenceForm)" #essenceForm="ngForm">
     <span id="questionForm">Votre véhicule essence a-t-il été immatriculé avant 1997 ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="true" required> Oui</label><br>
-    <label><input type="radio" name="reponse" ngModel value="false"> Non</label><br>
+    <label><input type="radio" name="reponse" ngModel value="false" required> Non</label><br>
+	<button id="prec" type="button" (click)="typeMoteurVersTypeVoiture('essenceForm')">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="typeVehiculeAcheterForm" (ngSubmit)="traitement(typeVehiculeAcheterForm)" #typeVehiculeAcheterForm="ngForm">
     <span id="questionForm">Quel type de véhicule souhaitez-vous acheter ou louer ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="voiture" required> Véhicule particulier, camionnette ou véhicule utilitaire léger</label><br><br>
-    <label><input type="radio" name="reponse" ngModel value="moto"> 2 ou 3 roues motorisé ou quadricycle électrique avec une puissance maximale nette du moteur supérieure ou égale à 2 kilowatts</label><br>
+    <label><input type="radio" name="reponse" ngModel value="moto" required> 2 ou 3 roues motorisé ou quadricycle électrique avec une puissance maximale nette du moteur supérieure ou égale à 2 kilowatts</label><br>
+	<button id="prec" type="button" (click)="allerEtapePrecedente()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="etatVehiculeForm" (ngSubmit)="traitement(etatVehiculeForm)" #etatVehiculeForm="ngForm">
     <span id="questionForm">S'agit-il d'un véhicule neuf ou d'occasion ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="neuf" required> Neuf</label><br>
-    <label><input type="radio" name="reponse" ngModel value="occasion"> Occasion</label><br>
+    <label><input type="radio" name="reponse" ngModel value="occasion" required> Occasion</label><br>
+	<button id="prec" type="button" (click)="allerEtapePrecedente()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="classementCritairForm" (ngSubmit)="traitement(classementCritairForm)" #classementCritairForm="ngForm">
     <span id="questionForm">Quel est le classement Crit'air du véhicule que vous souhaitez acheter ou louer ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="electrique" required> Électrique ou hydrogène</label><br>
-    <label><input type="radio" name="reponse" ngModel value="ca1"> Crit'air 1</label><br>
-    <label><input type="radio" name="reponse" ngModel value="ca2"> Crit'air 2</label><br>
-    <label><input type="radio" name="reponse" ngModel value="autres"> Autres</label><br>
+    <label><input type="radio" name="reponse" ngModel value="ca1" required> Crit'air 1</label><br>
+    <label><input type="radio" name="reponse" ngModel value="ca2" required> Crit'air 2</label><br>
+    <label><input type="radio" name="reponse" ngModel value="autres" required> Autres</label><br>
+	<button id="prec" type="button" (click)="allerEtapePrecedente()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="emissionsCO2Form" (ngSubmit)="traitement(emissionsCO2Form)" #emissionsCO2Form="ngForm">
     <span id="questionForm">Quelles sont les émissions de dioxyde de carbone du véhicule que vous souhaitez acheter ou louer ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="-50" required> Émissions de CO<sub>2</sub> sont inférieures ou égales à 50 g/km</label><br>
-    <label><input type="radio" name="reponse" ngModel value="51-122"> Émissions de CO<sub>2</sub> sont comprises entre 51 et 122 g/km inclus</label><br>
-    <label><input type="radio" name="reponse" ngModel value="+122"> Émissions de CO<sub>2</sub> sont supérieures à 122 g/km</label><br>
+    <label><input type="radio" name="reponse" ngModel value="51-122" required> Émissions de CO<sub>2</sub> sont comprises entre 51 et 122 g/km inclus</label><br>
+    <label><input type="radio" name="reponse" ngModel value="+122" required> Émissions de CO<sub>2</sub> sont supérieures à 122 g/km</label><br>
+	<button id="prec" type="button" (click)="allerEtapePrecedente()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 
   <form id="hybrideForm" (ngSubmit)="traitement(hybrideForm)" #hybrideForm="ngForm">
     <span id="questionForm">S'agit-il d'un véhicule Hybride rechargeable avec une autonomie en mode tout électrique supérieure à 50 km ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="true" required> Oui</label><br>
-    <label><input type="radio" name="reponse" ngModel value="false"> Non</label><br>
+    <label><input type="radio" name="reponse" ngModel value="false" required> Non</label><br>
+	<button id="prec" type="button" (click)="allerEtapePrecedente()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
   
   <form id="grandRouleurForm" (ngSubmit)="traitement(grandRouleurForm)" #grandRouleurForm="ngForm">
     <span id="questionForm">Parcourez-vous plus de 30 km pour vous rendre sur votre lieu de travail depuis votre domicile ou plus de 12 000 km par an dans le cadre de votre activité professionnelle avec votre véhicule personnel ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="true" required> Oui</label><br>
-    <label><input type="radio" name="reponse" ngModel value="false"> Non</label><br>
+    <label><input type="radio" name="reponse" ngModel value="false" required> Non</label><br>
+	<button id="prec" type="button" (click)="allerEtapePrecedente()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
   
   <form id="emissionsCO2Ca2Form" (ngSubmit)="traitement(emissionsCO2Ca2Form)" #emissionsCO2Ca2Form="ngForm">
     <span id="questionForm">Quelles sont les émissions de dioxyde de carbone du véhicule que vous souhaitez acheter ou louer ?</span><br><br>
     <label><input type="radio" name="reponse" ngModel value="-=122" required> Émissions de CO<sub>2</sub> sont inférieures ou égales à 122 g/km inclus</label><br>
-    <label><input type="radio" name="reponse" ngModel value="+122"> Émissions de CO<sub>2</sub> sont supérieures à 122 g/km</label><br>
+    <label><input type="radio" name="reponse" ngModel value="+122" required> Émissions de CO<sub>2</sub> sont supérieures à 122 g/km</label><br>
+	<button id="prec" type="button" (click)="allerEtapePrecedente()">Précedent</button>
     <button type="submit">Suivant</button>
   </form>
 

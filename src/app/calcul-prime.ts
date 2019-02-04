@@ -3,7 +3,7 @@ import * as json from './arbre.json';
 export class CalculPrime {
   
   private idActuel: number;
-  private idPrecedent: number;
+  private idPrecedent;
   private jsonParse;
   private maxEtapes;
   private possibiliteMax;
@@ -11,7 +11,7 @@ export class CalculPrime {
 
   constructor() {
     this.idActuel = null;
-	this.idPrecedent = null;
+	this.idPrecedent = [];
 	this.jsonParse = json;
 	this.possibiliteMax = 0;
 	this.nbPossibiliteMax = 0;
@@ -33,7 +33,7 @@ export class CalculPrime {
   public etapeCalculPrime(cleFils: string) {
 	if (this.jsonParse[this.idActuel]["nbFils"] != 0) {
       document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "none";
-	  this.idPrecedent = this.idActuel;
+	  this.idPrecedent.push(this.idActuel);
 	  this.idActuel = this.jsonParse[this.idActuel][cleFils];
 	  this.incrementerBar();
 	  document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "initial";
@@ -47,6 +47,13 @@ export class CalculPrime {
 	  document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).innerHTML = "Prime de " + this.jsonParse[this.idActuel]["prime"] + "€.<br>"
 																					+ "Bonus eco de " + this.jsonParse[this.idActuel]["bonusEco"] + "€.";
     }
+  }
+  
+  public etapePrecedente() {
+	   document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "none";
+	   this.idActuel = this.idPrecedent[this.idPrecedent.length-1];
+	   document.getElementById(this.jsonParse[this.idActuel]["htmlID"]).style.display = "initial";
+	   this.idPrecedent.pop();
   }
   
   public testCalculPrime(etapeTab) {
@@ -84,7 +91,7 @@ export class CalculPrime {
 	  this.nbPossibiliteMax = this.possibiliteMax;
   }
   
-  private incrementerBar() {
+  public incrementerBar() {
 	this.getMaxEtapes(this.idActuel);
 	if (this.possibiliteMax == 1) {
 		var widthCSS = 100;

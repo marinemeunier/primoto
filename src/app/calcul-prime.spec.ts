@@ -1,19 +1,6 @@
-import { CalculPrime } from './calcul-prime.ts';
+import { CalculPrime } from './calcul-prime';
 import { expect } from 'chai';
 import 'mocha';
-
-describe('CalculPrime | Diesel imposable voiture neuf', () => {
-
-	var cp = new CalculPrime();
-/*
-	it('achat véhicule electrique', () => {
-		cp.setIdActuel(1);
-		var resultat = cp.testCalculPrime(["true", "voiture", "neuf", "electrique"]);
-		expect(resultat["prime"]).to.equal(2500);
-		expect(resultat["bonusEco"]).to.equal(6000);
-	});
-
-}); */
 
 // Chemin arbre 1-3-4-5-8
 describe('CalculPrime | Diesel non imposable voiture neuf', () => {
@@ -26,6 +13,7 @@ describe('CalculPrime | Diesel non imposable voiture neuf', () => {
 		expect(resultat["prime"]).to.equal(2500);
 		expect(resultat["bonusEco"]).to.equal(6000);
 	});
+});
 
 // Chemin arbre 2-18-19-20-22-23
 	describe('CalculPrime | Diesel non imposable voiture neuf', () => {

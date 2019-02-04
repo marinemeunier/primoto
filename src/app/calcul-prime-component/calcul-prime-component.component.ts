@@ -86,6 +86,43 @@ export class CalculPrimeComponentComponent implements OnInit {
 	
   }
   
+  allerEtapePrecedente() {
+	this.cp.etapePrecedente();
+	this.cp.incrementerBar();
+  }
+  
+  precedentStatique(formN1: string, formN2: string) {
+	document.getElementById(formN1).style.display = "none";
+	document.getElementById(formN2).style.display = "initial";
+  }
+  
+  majeurFranceVersInitial() {
+	document.getElementById("majeurFranceForm").style.display = "none";
+	document.getElementById("initialForm").style.display = "initial";
+	document.getElementById("initialBar").style.display = "none";
+  }
+  
+  imposableVersMajeurFrance() {
+	document.getElementById("imposableForm").style.display = "none";
+	document.getElementById("majeurFranceForm").style.display = "initial";
+	document.getElementById("initialBarNb2").style.backgroundColor = "#f1f1f1";
+	document.getElementById("initialBarNb2").style.color = "#f1f1f1";
+  }
+  
+  typeVoitureVersImposable() {
+	document.getElementById("typeVoitureForm").style.display = "none";
+	document.getElementById("imposableForm").style.display = "initial";
+	document.getElementById("initialBarNb3").style.backgroundColor = "#f1f1f1";
+	document.getElementById("initialBarNb3").style.color = "#f1f1f1";
+  }
+  
+  typeMoteurVersTypeVoiture(idForm: string) {
+	document.getElementById(idForm).style.display = "none";
+	document.getElementById("typeVoitureForm").style.display = "initial";
+	document.getElementById("bar").style.display = "none";
+	document.getElementById("initialBar").style.display = "flex";
+  }
+  
   reinitialiser(form: NgForm) {
 	this.cp = new CalculPrime();
 	this.cp.setProgressionBar(0);
