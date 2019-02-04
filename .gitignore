@@ -44,7 +44,7 @@ Thumbs.db
 
 # Other files
 .editorconfig
-/environments
+/src/environments/*
 primoto@0.0.0
 /e2e
 mocha
@@ -67,7 +67,9 @@ sonar-project.properties
 .scannerwork/
 /src/assets/.gitkeep
 /src/assets/vendor
+/src/assets/js/*
 /src/app/app-routing.module.ts
 /src/app/app.component.spec.ts
 /src/app/json.d.ts
 /src/app/carte/carte.component.spec.ts
+/src/app/calcul-prime-component/calcul-prime-component.component.spec.ts
