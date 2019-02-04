@@ -8,15 +8,13 @@ import { PapaParseModule } from 'ngx-papaparse';
 import { Routes, RouterModule } from '@angular/router';
 import { CarteComponent } from './carte/carte.component';
 import { CalculPrimeComponentComponent } from './calcul-prime-component/calcul-prime-component.component';
-import { TexteComponent } from './texte/texte.component';
 import * as $ from 'jquery';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarteComponent,
-    CalculPrimeComponentComponent,
-    TexteComponent
+    CalculPrimeComponentComponent
   ],
   imports: [
     BrowserModule,

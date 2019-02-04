@@ -14,7 +14,7 @@
 #essenceForm {
   display: none;
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 #conteneurForm {
@@ -56,7 +56,7 @@
 }
 
 #initialBar > div {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', Helvetica, sans-serif;
   height: 19px;
   width: 33%;
   color: #f1f1f1;
@@ -69,7 +69,7 @@
 }
 
 #bar {
-	font-family: 'Montserrat';
+  font-family: 'Montserrat', Helvetica, sans-serif;
 	width: 0%;
 	display: none;
 	-webkit-transition: width 0.2s ease-out;

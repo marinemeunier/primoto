@@ -43,15 +43,31 @@ testem.log
 Thumbs.db
 
 # Other files
+.editorconfig
+/environments
 primoto@0.0.0
 /e2e
 mocha
 /src/browserslist
 /src/gulpfile.js
 /src/karma.conf.js
+angular.json
+package-lock.json
+tsconfig.json
 tslint.json
 typings.json
 /src/tslint.json
 /src/web.config
+/src/tsconfig.app.json
+/src/tsconfig.spec.json
+/src/main.ts
+/src/polyfills.ts
+/src/test.ts
 sonar-project.properties
 .scannerwork/
+/src/assets/.gitkeep
+/src/assets/vendor
+/src/app/app-routing.module.ts
+/src/app/app.component.spec.ts
+/src/app/json.d.ts
+/src/app/carte/carte.component.spec.ts
