@@ -21,9 +21,9 @@ Professeur encadrant :
 
 ## Technos utilisées
 
-* Javascript 
+* JavaScript 
 * NodeJS / TypeScript
-* Angular 2.4
+* Angular
 
 ## Qu’est-ce que cette prime à la conversion ?
 
@@ -33,7 +33,7 @@ Avec la monté en puissance du célèbre mouvement les « Gilets Jaunes », le
 
 ### Modalité et calculs
 
-*Le projet étant scolaire, et l’État n’ayant actuellement pas déterminer les modalités de la « Super-Prime », nous proposerons ici un ***Minimum Valuable Product ***(MVP) qui permettra à un utilisateur de connaitre le prix de reprise de son véhicule*
+*Le projet étant scolaire, et l’État n’ayant actuellement pas déterminé les modalités de la « Super-Prime », nous proposerons ici un ***Minimum Valuable Product ***(MVP) qui permettra à un utilisateur de connaitre le prix de reprise de son véhicule*
 
 #### Pour les voitures
 
